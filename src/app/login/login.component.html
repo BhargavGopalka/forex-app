@@ -1,0 +1,11 @@
+<div>
+  <h1>Login</h1>
+  <form [formGroup]="form" (ngSubmit)="login()">
+    Email Address/User Name: <input type="text" formControlName="userName" required /><br><br>
+    Password: <input type="password" formControlName="password" required /><br><br>
+    <input type="submit" value="Login" [disabled]="loading" routerLink="success">
+  </form>
+  <br>
+  Don't have an Account, <a routerLink="/signUp">Sign Up</a>
+</div>
+
